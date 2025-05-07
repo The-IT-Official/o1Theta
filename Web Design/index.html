@@ -1,56 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Nathan's Portfolio Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <title>Nathan's Portfolio Website</title>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </nav>
 
-    <header>
-        <h1>Computer Science Portfolio</h1>
-        <p>Aspiring software engineer and AI researcher passionate about building real-world solutions, exploring cutting-edge technologies, and mastering every level of Computer Science.</p>
-        <p>Currently working on advanced AI models, full-stack applications, and personal tech projects.</p>
-    </header>
+  <header>
+    <h1>Computer Science Portfolio</h1>
+    <p>
+      Aspiring software engineer and AI researcher passionate about building real-world solutions,
+      exploring cutting-edge technologies, and mastering every level of Computer Science.
+    </p>
+    <p>
+      Currently working on advanced AI models, full-stack applications, and personal tech projects.
+    </p>
+  </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
+  <section id="practice-projects">
+    <h2>Practice Projects</h2>
+    <div class="scroll-container" onmouseenter="pauseScroll()" onmouseleave="resumeScroll()">
+      <div class="scroll-wrapper" id="scrollWrapper">
+        <div class="scroll-row">
+
+          <div class="scroll-card">
             <h3>o1Theta - Custom AI Model</h3>
-            <p>A 196M+ parameter transformer model built from scratch and trained on massive datasets with FlashAttention, RoPE, and LoRA.</p>
-        </div>
-        <div class="project-card">
+            <p>A 196M+ parameter transformer built from scratch using FlashAttention, RoPE, and LoRA.</p>
+          </div>
+
+          <div class="scroll-card">
             <h3>Portfolio Website</h3>
-            <p>This glowing dark-mode portfolio page you're reading now — fully coded by me.</p>
+            <p>A glowing dark-mode portfolio site to showcase my AI and CS work.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Block Letters</h3>
+            <p>Displayed initials in ASCII art using creative spacing.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Lovely Loveseats</h3>
+            <p>Built a receipt generator using strings, math, and catalog logic.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Magic 8-Ball</h3>
+            <p>Used Python control flow to simulate fortune-telling responses.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Thread Shed</h3>
+            <p>Parsed CSV transaction data to analyze sewing store sales.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Getting Ready for Physics</h3>
+            <p>Built a suite of helper functions for physics topics.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Scrabble</h3>
+            <p>Created a scoring system for Scrabble using dictionaries.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Hacking The Fender</h3>
+            <p>Simulated hacker detection and removal using Python.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>School Catalogue</h3>
+            <p>Used OOP to model classes and inheritance for schools.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Dog Years</h3>
+            <p>Converted dog age to human years with conditional logic.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Fashion Blog</h3>
+            <p>Structured a web blog using clean semantic HTML.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Carly's Clippers</h3>
+            <p>Analyzed salon trends using Python loops.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Basta Fazoolin'</h3>
+            <p>Built restaurant operations software using class methods.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Medical Insurance Projects</h3>
+            <p>Used variables, functions, lists, strings, and loops to model cost estimations.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Bicycle World</h3>
+            <p>Explored the command line by creating and managing files.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Athletica</h3>
+            <p>Practiced file redirection in a sporting context.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Coffee Chatbot</h3>
+            <p>Built a chatbot that simulates ordering coffee.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Looping Coffee Chatbot</h3>
+            <p>Extended chatbot functionality using loops.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Artusi</h3>
+            <p>Used CLI to edit files more efficiently.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Attica</h3>
+            <p>Configured terminal shortcuts and personalization.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Healthy Recipes</h3>
+            <p>Styled a recipe site using targeted CSS selectors.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Olivia Woodruff Portfolio</h3>
+            <p>Practiced visual styling with CSS rules.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Manhattan Zoo</h3>
+            <p>Tracked file changes using Git version control.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Decrypt Secret Messages</h3>
+            <p>Decrypted data using terminal tools.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Creating an Adder Circuit</h3>
+            <p>Built a logic gate adder on a breadboard.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Housing Data Central Tendency</h3>
+            <p>Calculated statistical metrics on housing data.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Frida Kahlo Retrospective</h3>
+            <p>Analyzed artwork data using Python lists.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Echo Chatbot</h3>
+            <p>Built a beginner chatbot using basic string operations.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Laptop Repair Data</h3>
+            <p>Used pandas to explore laptop repair datasets.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Wine Festival Schedule</h3>
+            <p>Organized HTML tables for a schedule site.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Common Cents Party</h3>
+            <p>Created band landing pages using HTML fundamentals.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Cupful Cafe</h3>
+            <p>Styled a cafe homepage using modern CSS.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>New York City Blog</h3>
+            <p>Built a blog using semantic structure and layout.</p>
+          </div>
+
+          <div class="scroll-card">
+            <h3>Fizz Buzz</h3>
+            <p>Classic coding challenge to test loop logic.</p>
+          </div>
+
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hi, I'm Nathan — a self-taught computer science student with a deep interest in artificial intelligence, systems programming, and startup innovation. I love building things from scratch, solving complex problems, and continuously learning new technologies. My current focus is on LLMs, machine learning, full-stack web development, and low-level systems like compilers and operating systems.</p>
-        <p>I’ve completed multiple personal projects including AI models, a full compiler, and a website for a local business. I believe in pushing the limits of what’s possible and aim to become one of the top innovators in tech.</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Nathan — a self-taught computer science student with a deep interest in artificial intelligence,
+      systems programming, and startup innovation. I love building things from scratch, solving complex problems,
+      and continuously learning new technologies. My current focus is on LLMs, machine learning, full-stack web
+      development, and low-level systems like compilers and operating systems.
+    </p>
+    <p>
+      I’ve completed multiple personal projects including AI models, a full compiler, and a website for a local business.
+      I believe in pushing the limits of what’s possible and aim to become one of the top innovators in tech.
+    </p>
+  </section>
 
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:nathanbpeter27@gmail.com">NathanBPeter27@gmail.com</a></p>
+    <p>Github: <a href="https://github.com/the-it-official" target="_blank">github.com/The-IT-Official</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/nathan-peter-1850502ab" target="_blank">linkedin.com/in/nathanpeter</a></p>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:nathanbpeter27@gmail.com">NathanBPeter27@gmail.com</a></p>
-        <p>Github: <a href="https://github.com/the-it-official" target="_blank">github.com/The-IT-Official</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/nathan-peter-1850502ab" target="_blank">linkedin.com/in/nathanpeter</a></p>
-    </section>
+  <footer>
+    <p>&copy; 2025 Nathan Peter's Portfolio. All rights reserved.</p>
+  </footer>
 
-    <footer>
-        <p>&copy; 2025 Nathan Peter's Portfolio. All rights reserved.</p>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
