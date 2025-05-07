@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>o1Theta - Countdown to AGI</title>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    #countdown {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    .highlight {
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 <span class="highlight">o1Theta</span>: Awakening Global AGI</h1>
+  <p>⏳ Countdown to the Unleashing of Intelligence (October 27, 2027):</p>
+  <div id="countdown">Loading...</div>
+
+  <script>
+    function updateCountdown() {
+      const releaseDate = new Date("October 27, 2027 00:00:00").getTime();
+      const now = new Date().getTime();
+      const distance = releaseDate - now;
+
+      if (distance < 0) {
+        document.getElementById("countdown").innerHTML =
+          "🎉 AGI is here. Welcome to a new era.";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById(
+        "countdown"
+      ).innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
