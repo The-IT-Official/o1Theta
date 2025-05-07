@@ -58,13 +58,13 @@ header {
 
 /* Section Styling */
 section {
-    margin-bottom: 2rem auto;
+    width: 100%;
     padding: 2rem;
     border: 1px solid white;
     border-radius: 12px;
     box-shadow: 0 0 15px white;
-    max-width: 800px;
-    animation: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 2rem 0;
+    transition: transoform 0.3 ease, box-shadow 0.3s ease;
 }
 
 #about {
